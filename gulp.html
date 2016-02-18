@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>gulp</title>
+
+    <meta name="description" content="Introduction to gulp" />
+    <meta name="author" content="Tanmay Rajani" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p></p>
+</div>
+
+<div id="impress">
+    <div id="json1" class="step slide2" data-x="-3000" data-y="-1500"><br><br><br><br><br><br>
+        <div class="tttitle"><img draggable="false" src="media/gulp_logo.jpg" alt="gulp logo"></div>
+    </div>
+
+    <div id="json2" class="step slide" data-x="-1000" data-y="-1500" data-rotate-z="180">
+        <div class="jsontitle">Learning gulp is as easy as..</div><br><br>
+        <div class="tttitle"><img draggable="false" src="media/gulp_meme.jpg" alt="gulp meme"></div>
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="-1500" data-z="-6500" data-rotate-z="1650" >
+        <div class="jsontitle">Again..</div>
+        <blockquote>There’s no point in investing your time into learning a new tool if you don’t even know what problem it solves.</blockquote>
+    </div>
+
+    <div class="step slide" data-x="-2000" data-y="-3000" data-z="-500" data-rotate-z="500" >
+        <div class="jsontitle">So, <span class="rep">WHY</span> USE GULP?</div>
+        <blockquote class="thirdquote">
+            <div class="anotherline">Gulp solves the problem of <span class="rep">repetition</span>.</div>
+            <div class="anotherline">There are a lot of repetitive tasks involved with creating and deploying a front-end application.</div>
+            <div class="anotherline">Gulp helps us <span class="rep">automate</span> them.</div>
+            <div class="anotherline">Automating repetitive tasks = more time to do non-repetitive tasks = more productivity.</div>
+        </blockquote>
+    </div>
+
+    <div class="slide step" data-x="0" data-y="1000" data-scale="1">
+        <div class="internally">Think of gulp as a factory</div><h1 class="jsontitle"> </h1>
+        <img class="factory" src="media/factory.png" draggable="false" alt="Gulp is a Factory">
+        <div class="x2">It takes files and turns them into other files with very minimal effort.</div>
+    </div>
+
+    <div class="step slide" data-x="-6000" data-y="1500" data-z="4500" data-rotate-y="-900" >
+        <div class="jsontitle">WHY U NO COME STRAIGHT TO THE POINT?</div>
+        <blockquote class="thirdquote">
+            <div class="anotherline a2">Gulp does nothing but provide some streams and a basic task system.</div>
+            <div class="anotherline a2">Gulp has only <span class="rep">5 functions</span> you need to learn.</div>
+            <div class="anotherline x2"><br>You're just 10 minutes away from becoming a <b>gulp expert</b>.</div>
+        </blockquote>
+    </div>
+
+   <div class="cube">
+       <div class="topFace step" data-x="2000" data-y="1125" data-z="-5005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45" data-scale="0.5">
+           <div class="jsontitle">gulp.task(name, fn)</div>
+           <blockquote class="cubequote">
+               <div class="anotherline c2">It registers the function with a name.</div>
+               <div class="anotherline c2">You can optionally specify some dependencies if other tasks need to run first.</div>
+           </blockquote>
+       </div>
+       <div class="leftFace step" data-x="1875" data-y="1340" data-z="-4985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0" data-scale="0.5">
+           <div class="jsontitle">gulp.src(filepattern)</div>
+           <blockquote class="cubequote">
+               <div class="anotherline c2">This returns a readable stream.</div>
+               <div class="anotherline c2">Takes a file system pattern and starts emitting files that match.</div>
+               <div class="anotherline c2">This is piped to other streams.</div>
+           </blockquote>
+       </div>
+       <div class="rightFace step" data-x="2125" data-y="1340" data-z="-4985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0" data-scale="0.5">
+           <div class="jsontitle">gulp.dest(folder)</div>
+           <blockquote class="cubequote">
+               <div class="anotherline c2">This returns a writable stream.</div>
+               <div class="anotherline c2">File objects piped to this are saved to the file system.</div>
+           </blockquote>
+       </div>
+       <div class="backRightFace step" data-x="2125" data-y="1215" data-z="-5200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
+           <div class="jsontitle">gulp.watch(filepattern, fn)</div>
+           <blockquote class="cubequote">
+               <div class="anotherline c2">Runs a function when a file that matches the <span class="rep"><i>filepattern</i></span> changes.</div>
+               <div class="anotherline c2">Instead of function, we can specify array of tasks as well and it would run mentioned tasks instead.</div>
+           </blockquote>
+       </div>
+       <div class="backLeftFace step" data-x="1875" data-y="1215" data-z="-5200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0" data-scale="0.5">
+           <div class="jsontitle">gulp.run(tasks...)</div>
+           <blockquote class="cubequote">
+               <div class="anotherline c2">Runs all tasks with maximum concurrency</div>
+           </blockquote>
+       </div>
+
+       <div class="bottomFace step" data-x="2000" data-y="1430" data-z="-5180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45" data-scale="0.5">
+           <div class="jsontitle">Oh.. and one more thing!</div>
+           <blockquote class="cubequote">
+               <div class="anotherline c2">We can use "<b>.pipe()</b>" to send one program's output as another's input.</div>
+           </blockquote>
+       </div>
+   </div>
+
+   <div class="step slide" data-x="7000" data-y="-6500" data-z="-3500" data-rotate-z="-900" >
+       <div class="jsontitle">Popular Plugins</div>
+       <ul class="whatspring">
+           <li class="fullform">&nbsp;gulp-sass, autoprefixer & csso </li>
+           <li class="fullform">&nbsp;gulp-uglify, jshint & jscs</li>
+           <li class="fullform">&nbsp;browserSync</li>
+           <li class="fullform">&nbsp;gulp-newer (cache & remember too)</li>
+           <li class="fullform">&nbsp;gulp-imagemin</li>
+       </ul>
+   </div>
+
+
+    <div id="title2" class="step" data-x="15000" data-y="3000" data-rotate-x="60" data-rotate-y="1080" data-rotate-z="45" data-scale="6">
+        <div class="jsontitle">
+            Well, Thanks for tolerating me!<br><br>[!]<br><br>*gulps*
+
+        </div>
+
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
